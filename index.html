@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>app</title>
+		<link rel="stylesheet" type="text/css" href="./font/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="swiper.min.css" />
+	</head>
+
+	<body>
+		<div id="app"></div>
+		<script src="./dist/build.js"></script>
+		<script src="./swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				slidesPerView: 1,
+				spaceBetween: 30,
+				loop: true,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+		</script>
+	</body>
+
+</html>
